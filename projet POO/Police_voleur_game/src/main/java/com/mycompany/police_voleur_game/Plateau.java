@@ -16,8 +16,6 @@ public class Plateau extends JFrame {
         setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        
-        // Ajout du plateau
         add(new BoardPanel());
     }
     
@@ -34,24 +32,18 @@ public class Plateau extends JFrame {
             int centerY = height / 2;
             int radius = 200;
             
-            // 1. Dessiner le cercle extérieur
+           
             g2d.drawOval(centerX - radius, centerY - radius, radius * 2, radius * 2);
 
-            // 2. Dessiner les lignes (la croix)
-            g2d.drawLine(centerX - radius, centerY, centerX + radius, centerY); // Horizontale
-            g2d.drawLine(centerX, centerY - radius, centerX, centerY + radius); // Verticale
+            
+            g2d.drawLine(centerX - radius, centerY, centerX + radius, centerY);
+            g2d.drawLine(centerX, centerY - radius, centerX, centerY + radius);
 
-            // 3. Dessiner les Noeuds (les emplacements des pions)
             int nodeRadius = 15;
-            // Centre (P)
             drawNode(g2d, centerX, centerY, nodeRadius);
-            // Haut (V)
             drawNode(g2d, centerX, centerY - radius, nodeRadius);
-            // Bas (V)
             drawNode(g2d, centerX, centerY + radius, nodeRadius);
-            // Gauche (P)
             drawNode(g2d, centerX - radius, centerY, nodeRadius);
-            // Droite (P)
             drawNode(g2d, centerX + radius, centerY, nodeRadius);
         }
         
