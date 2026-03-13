@@ -1,0 +1,8 @@
+com/mycompany/police_voleur_game/modele/Joueurs.class
+com/mycompany/police_voleur_game/Plateau$BoardPanel.class
+com/mycompany/police_voleur_game/Connection/Database.class
+com/mycompany/police_voleur_game/DAO/JoueursDAO.class
+com/mycompany/police_voleur_game/Plateau.class
+com/mycompany/police_voleur_game/modele/Partie.class
+com/mycompany/police_voleur_game/Connection/Connectivity.class
+com/mycompany/police_voleur_game/DAO/PartieDAO.class
