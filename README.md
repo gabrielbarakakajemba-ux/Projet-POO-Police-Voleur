@@ -5,6 +5,7 @@
 -> Ce projet est une application desktop développée en Java dans le cadre de ma 2e année d'Informatique Appliquée. Il met en œuvre une architecture structurée alliant interface graphique, logique de jeu et persistance de données.
 
 Description du Projet
+
 -> Le jeu oppose deux camps sur un plateau circulaire spécifique (5 nœuds interconnectés). L'objectif est simple mais stratégique : les Policiers (P) doivent encercler le Voleur (V) pour l'immobiliser, tandis que le voleur doit manœuvrer pour éviter la capture.
 
 Stack Technique
