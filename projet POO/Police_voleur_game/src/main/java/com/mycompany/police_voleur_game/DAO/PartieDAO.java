@@ -67,7 +67,7 @@ public class PartieDAO {
             stmt.setInt(3, p.getNb_police());
             stmt.setInt(4, p.getResultat());
             stmt.setTimestamp(5, p.getDuree());
-            stmt.setInt(6, p.getId_partie()); // Le WHERE pour cibler la bonne partie
+            stmt.setInt(6, p.getId_partie()); 
 
             int rowsUpdated = stmt.executeUpdate();
             if (rowsUpdated > 0) {

@@ -6,13 +6,14 @@ package com.mycompany.police_voleur_game;
 
 import javax.swing.*;
 import java.awt.*;
+
 /**
  *
  * @author mr-kajemba
  */
 public class Plateau extends JFrame {
     public Plateau() {
-        setTitle("Jeu Police vs Voleur");
+        setTitle("Police Voleur");
         setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);

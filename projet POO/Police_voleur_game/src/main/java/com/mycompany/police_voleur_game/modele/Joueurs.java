@@ -16,7 +16,7 @@ public class Joueurs {
         this.id_joueurs = id_joueurs;
         this.pseudo = pseudo;
     }
-    // Getters et Setters
+    
     public int getIdJoueur() { return id_joueurs; }
     public String getPseudo() { return pseudo; }
     public void setPseudo(String pseudo) { this.pseudo = pseudo; }
