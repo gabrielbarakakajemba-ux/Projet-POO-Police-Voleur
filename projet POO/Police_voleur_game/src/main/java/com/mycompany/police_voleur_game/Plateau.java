@@ -40,9 +40,12 @@ public class Plateau extends JFrame {
             g2d.drawLine(centerX - radius, centerY, centerX + radius, centerY);
             g2d.drawLine(centerX, centerY - radius, centerX, centerY + radius);
 
-            int nodeRadius = 40;
+            int nodeRadius = 50;
             drawNode(g2d, centerX, centerY, nodeRadius);
-            drawNodeArc(g2d, centerX, centerY - radius, nodeRadius);
+            drawNodeArc(g2d, centerX, centerY - radius, nodeRadius);// arc du Haut
+            drawNodeArcD(g2d, centerX, centerY + radius, nodeRadius);//arc du Bas
+            drawNodeArcR(g2d, centerX + radius, centerY , nodeRadius);//arc de Droite
+            drawNodeArcL(g2d, centerX - radius, centerY , nodeRadius);//arc de Gauche
             
         }
         
@@ -58,7 +61,30 @@ public class Plateau extends JFrame {
            
            g.drawArc(x - r,  y - r, r * 2, r * 2,  arcAngle, startAngle);
         } 
-
+        
+          private void drawNodeArcD(Graphics2D g, int x, int y, int r) {
+           g.setColor(Color.BLACK);
+           int startAngle = 180;
+           int arcAngle = 0;
+           
+           g.drawArc(x - r,  y - r, r * 2, r * 2,  arcAngle, startAngle);
+        } 
+          
+        private void drawNodeArcR(Graphics2D g, int x, int y, int r) {
+           g.setColor(Color.BLACK);
+           int startAngle = 180;
+           int arcAngle = 90;
+           
+           g.drawArc(x - r,  y - r, r * 2, r * 2,  arcAngle, startAngle);
+        } 
+        
+        private void drawNodeArcL(Graphics2D g, int x, int y, int r) {
+           g.setColor(Color.BLACK);
+           int startAngle = 180;
+           int arcAngle = -90;
+           
+           g.drawArc(x - r,  y - r, r * 2, r * 2,  arcAngle, startAngle);
+        }
     }   
         
     public static void main(String[] args) {
