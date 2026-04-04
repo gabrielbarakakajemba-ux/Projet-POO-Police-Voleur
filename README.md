@@ -6,7 +6,7 @@
 
 Description du Projet
 
--> Le jeu oppose deux camps sur un plateau circulaire spécifique (5 nœuds interconnectés). L'objectif est simple mais stratégique : les Policiers (P) doivent encercler le Voleur (V) pour l'immobiliser, tandis que le voleur doit manœuvrer pour éviter la capture.
+-> Le jeu oppose deux camps sur un plateau circulaire spécifique . L'objectif est simple mais stratégique : les Policiers (P) doivent encercler le Voleur (V) pour l'immobiliser, tandis que le voleur doit manœuvrer pour éviter la capture.
 
 Stack Technique
 	Langage : Java (JDK 17+)
